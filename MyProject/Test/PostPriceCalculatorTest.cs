@@ -1,0 +1,40 @@
+﻿using NUnit.Framework;
+
+
+namespace MyProject.Test
+{
+    public class PostPriceCalculatorTest : BaseTest
+    {
+
+        //C:\Users\J\source\repos\MyProject
+
+        [Test]
+        public void TestSelectedCountry()
+        {
+            _postPriceCalculatorPage.NavigateToDefaultPage()
+                .AcceptAllCookies()
+                .SelectCountry()
+                .CheckCountry();
+        }
+
+        [Test]
+        public void TestPickedSendingWay()
+        {
+            _postPriceCalculatorPage.NavigateToDefaultPage()
+                .AcceptAllCookies()
+                .PickPackageSendingWay()
+                 .CheckSendingWay();
+        }
+
+        [Test]
+        public void TestSendingPrice()
+        {
+            _postPriceCalculatorPage.NavigateToDefaultPage()
+                .AcceptAllCookies()
+                .PickPackageSendingWay()
+                .CheckSendingWay()
+                .PickPackageSize()
+                .CheckCalculatedPrice();
+        }
+    }
+}
