@@ -23,7 +23,7 @@ namespace MyProject.Test
             _postCodeAndAddressFinderPage = new PostCodeAndAddressFinderPage(driver);
             _postPackageTrackingPage = new PostPackageTrackingPage(driver);
             _postPriceCalculatorPage = new PostPriceCalculatorPage(driver);
-         
+            
         }
 
         [TearDown]

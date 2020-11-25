@@ -27,7 +27,7 @@ namespace MyProject.Page
         {
             Cookie myCookie = new Cookie
                 ("CookieConsent",
-                "{stamp:%27RtK/rGsILdzWHuxmVX4E08mPDvtXvRVRLV3ZHyS39uYM/Wa6EAlMBg==%27%2Cnecessary:true%2Cpreferences:true%2Cstatistics:true%2Cmarketing:true%2Cver:1%2Cutc:1606239153702%2Cregion:%27lt%27}",
+                "{stamp:%27XrF9Tme2rtOF2vFNQMnUOjNRR+pQIFnBMFXcWPxkEsS6DbH7U1MDQw==%27%2Cnecessary:true%2Cpreferences:true%2Cstatistics:true%2Cmarketing:true%2Cver:1%2Cutc:1606319172027%2Cregion:%27lt%27}",
                 "post.lt",
                 "/",
                 DateTime.Now.AddDays(2)

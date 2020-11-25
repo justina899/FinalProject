@@ -6,8 +6,6 @@ namespace MyProject.Test
     public class PostPriceCalculatorTest : BaseTest
     {
 
-        //C:\Users\J\source\repos\MyProject
-
         [Test]
         public void TestSelectedCountry()
         {

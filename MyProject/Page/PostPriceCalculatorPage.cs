@@ -12,10 +12,8 @@ namespace MyProject.Page
         private const string SendingWayTextTerminalToTerminal = "Siunta bus pristatyta iš vieno siuntų savitarnos terminalo į kitą.";
         private const string Price = "4.29";
         private IWebElement SelectCountryButton => Driver.FindElement(By.CssSelector(".select2-selection__arrow"));
-        
         private IWebElement CountryOption => Driver.FindElement(By.XPath("//li[contains(@id,'-LT')]"));
-        private IWebElement CountryBox => Driver.FindElement(By.CssSelector("//span[@title='Lietuva - Lithuania']"));
-
+        private IWebElement CountryBox => Driver.FindElement(By.XPath("//span[@title='Lietuva - Lithuania']"));
         private IWebElement FromLPExpressButton => Driver.FindElement(By.CssSelector("#tab-1-1 > div > div.col-md-9 > form > div:nth-child(4) > ul > li:nth-child(3) > label"));
         private IWebElement ToLPExpressButton => Driver.FindElement(By.CssSelector("#tab-1-1 > div > div.col-md-9 > form > div.row.mh-entry.destination > ul > li:nth-child(3) > label"));
         private IWebElement PackageSize => Driver.FindElement(By.CssSelector("#sizesList > li:nth-child(4) > label"));
@@ -35,7 +33,7 @@ namespace MyProject.Page
         {
             Cookie myCookie = new Cookie
                 ("CookieConsent",
-                "{stamp:%27RtK/rGsILdzWHuxmVX4E08mPDvtXvRVRLV3ZHyS39uYM/Wa6EAlMBg==%27%2Cnecessary:true%2Cpreferences:true%2Cstatistics:true%2Cmarketing:true%2Cver:1%2Cutc:1606239153702%2Cregion:%27lt%27}",
+                "{stamp:%27XrF9Tme2rtOF2vFNQMnUOjNRR+pQIFnBMFXcWPxkEsS6DbH7U1MDQw==%27%2Cnecessary:true%2Cpreferences:true%2Cstatistics:true%2Cmarketing:true%2Cver:1%2Cutc:1606319172027%2Cregion:%27lt%27}",
                 "post.lt",
                 "/",
                 DateTime.Now.AddDays(2)
@@ -51,7 +49,7 @@ namespace MyProject.Page
         public PostPriceCalculatorPage SelectCountry()
         {
             SelectCountryButton.Click();
-            CountryOption.Click();
+            CountryBox.Click();
             return this;
         }
 
